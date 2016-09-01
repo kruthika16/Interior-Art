@@ -1,0 +1,13 @@
+grid {
+    width: 525px;
+    height: 900px;
+}
+
+#c1,#c2,#c3,#c4,#c5,#c6{
+    width: 175px;
+    height: 300px;
+   	float:left;
+    
+}
+
+#c1.p,#c2.p,#c3.p,#c4.p,#c5.p,#c6.p{ font-size:5 px;}

@@ -1,0 +1,91 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Interior Art | Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function validation()
+{
+	var user=document.login.username.value;
+	var user=user.trim();
+	var pass=document.login.password.value;
+ 
+	if(user == '')
+	{
+		document.getElementById('error').innerHTML="Please Enter Username";
+		return false;
+	}
+ 
+	if(pass == '')
+	{
+		document.getElementById('error').innerHTML="Please Enter Password";
+		return false;
+	}
+}
+</script>
+
+</head>
+<body id="page1">
+<div class="tail-bottom">
+  <!-- HEADER -->
+  <div id="header">
+    <div class="row-1">
+      <div class="fleft"><a href="index.html"><img src="images/logo.gif" alt="" /></a></div>
+      <div class="fright">
+        <ul>
+          <li><a href="index.html" ><em><b>Home</b></em></a></li>
+          <li><a href="designer.html"><em><b>Interior Designer</b></em></a></li>
+		  <li><a href="cart.html"><em><b>Cart</b></em></a></li>
+          <li><a href="login.html" class="active"><em><b>Login</b></em></a></li>
+		  <li><a href="register.html"><em><b>Sign up</b></em></a></li>
+          
+        </ul>
+      </div>
+    </div>
+<!-- CONTENT -->
+  <div id="content">
+        
+    <div class="tail-middle2">
+      <div class="row-2">
+        <div class="indent3">
+          <div class="container">
+           
+            <div class="col-2">
+              <h3><b>Log in</b></h3>
+              <div class="indent2">
+                 <div id="login-form">
+				 <link rel="stylesheet" href="loginstyle.css" media="screen" type="text/css" />
+				 
+        		 
+        <fieldset>
+
+            <form method="POST" action="login connectivity.php" onsubmit="return validation()" id="login" name="login" >
+
+                <input type="text" placeholder="Username">* <br><br>
+                <input type="password" placeholder="Password">*
+
+                <input type="submit" value="Login">
+
+                <footer class="clearfix">
+
+                    <p><a href="register.html"><b>New user? Sign up!</b></a></p>
+
+                </footer>
+
+            </form>
+
+        </fieldset>
+
+    </div> <!-- end login-form -->
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
